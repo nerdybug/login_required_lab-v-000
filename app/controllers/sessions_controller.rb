@@ -14,7 +14,7 @@ class SessionsController < ApplicationController
     if params[:name] && params[:name] != ""
       session[:name] = params[:name]
     else
-      redirect_to '/new'
+      redirect_to 'sessions#new'
     end
   end
 end
