@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   get '/show' => 'secrets#show'
   get '/new' => 'sessions#new'
   get '/destroy' => 'sessions#destroy'
-  post '/create(/:name)' => 'sessions#create(:name)'
+  post '/create(/:name)' => ':sessions:create(/:name)'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
