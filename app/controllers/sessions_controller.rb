@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
 
   end
 
-  def create(name = nil)
+  def create(*args)
     if session[:name] == nil || session[:name] == ""
       redirect_to '/new'
     elsif params[:name]
