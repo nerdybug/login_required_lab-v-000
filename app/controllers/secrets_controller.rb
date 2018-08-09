@@ -5,8 +5,4 @@ class SecretsController < ApplicationController
       redirect_to '/new'
     end
   end
-
-  # def current_user
-  #   session[:name] ||= nil
-  # end
 end
