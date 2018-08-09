@@ -5,7 +5,9 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-
+    if session[:name]
+      session.destroy('name')
+    end
   end
 
   def create(*args)
