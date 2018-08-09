@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get '/' => 'application#index'
   get '/show' => 'secrets#show'
-  get '/new' => 'sessions#new'
+  get '/login' => 'sessions#new'
   get '/destroy' => 'sessions#destroy'
   post '/create' => 'sessions#create'
   # The priority is based upon order of creation: first created -> highest priority.
