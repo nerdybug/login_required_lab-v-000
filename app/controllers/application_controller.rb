@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
   helper_method :current_user
 
   def index
-    render :index
+    redirect_to '/login'
   end
 
   def current_user
