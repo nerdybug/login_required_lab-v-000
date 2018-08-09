@@ -13,7 +13,7 @@ class SessionsController < ApplicationController
   def create(*args)
     if params[:name] && params[:name] != ""
       session[:name] = params[:name]
-      render 'secrets/show'
+      redirect_to controller: 'secrets', action: 'show'
     else
       redirect_to controller: 'sessions', action: 'new'
     end
