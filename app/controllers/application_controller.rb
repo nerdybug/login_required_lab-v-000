@@ -4,10 +4,12 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   helper_method :current_user
 
-  def hello
+  def index
     redirect_to controller: 'sessions', action: 'new'
   end
-
+  def hello
+    
+  end
   def current_user
     session[:name] ||= nil
   end
