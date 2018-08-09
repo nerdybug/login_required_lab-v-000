@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
   def index
     render :index
   end
-  
+
   def current_user
     session[:name] ||= nil
   end
