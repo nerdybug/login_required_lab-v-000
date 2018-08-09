@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get '/' => 'application#index'
   get '/show' => 'secrets#show'
   get '/new' => 'sessions#new'
   get '/destroy' => 'sessions#destroy'
