@@ -11,4 +11,11 @@ class ApplicationController < ActionController::Base
   def current_user
     session[:name] ||= nil
   end
+
+  private
+  def logged_in
+    if !current_user
+      redirect_to '/login'
+    end
+  end
 end
