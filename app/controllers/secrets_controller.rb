@@ -5,4 +5,8 @@ class SecretsController < ApplicationController
       redirect_to '/login'
     end
   end
+
+  def current_user
+    session[:name] ||= nil
+  end
 end
