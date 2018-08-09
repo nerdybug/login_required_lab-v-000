@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
   helper_method :current_user
 
   def index
-    redirect_to '/login'
+    redirect_to controller: 'sessions', action: 'new'
   end
 
   def current_user
