@@ -7,11 +7,11 @@ class ApplicationController < ActionController::Base
   def index
     redirect_to controller: 'sessions', action: 'new'
   end
-  
+
   def hello
 
   end
-  
+
   def current_user
     session[:name] ||= nil
   end
