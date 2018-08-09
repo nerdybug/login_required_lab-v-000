@@ -6,7 +6,7 @@ class SecretsController < ApplicationController
     end
   end
 
-  def current_user
-    session[:name] ||= nil
-  end
+  # def current_user
+  #   session[:name] ||= nil
+  # end
 end
